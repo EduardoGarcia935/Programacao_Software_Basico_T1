@@ -1,4 +1,15 @@
-PARA COMPILAR E EXECUTAR O TRABALHO:
+# T1 Programação de Software básico
+
+## Alunos
+
+- Eduardo Amengual Garcia
+- Jocemar Nicolodi Junior
+
+## Enunciado
+
+https://mflash.github.io/progswb2/trab/t1-231-sjfvhgdfuyvtae/
+
+## Para compilar e executar o projeto
 
 Pelo VSCode:
 
@@ -10,4 +21,3 @@ Pelo terminal:
 
 - Dentro da pasta do trabalho, digite "make" (ou "mingw32-make", no Windows)
 - Execute com ./zoom
-
