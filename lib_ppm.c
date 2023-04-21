@@ -4,6 +4,12 @@
  * author:        Sergio Johann Filho <sergio.johann@acad.pucrs.br>
  */
 
+/*
+ * O meu, eu ñ creio q seja necessário mexer em nada aqui, muito menos na 'lib_ppm.h'
+ * visto q é só a biblioteca, só vamos usar pra ler e ter uma base do q ta sendo 
+ * feito por de baixo dos panos
+*/
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
