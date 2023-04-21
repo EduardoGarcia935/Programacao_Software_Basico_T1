@@ -28,7 +28,7 @@ int main()
 
 		Sor cantou a pedra para ler e percorrer todos os pixeis da imagem,
 
-		assumindo que essa linha esteja dentro de dois "for()" para ler a matriz
+		assumindo que essa linha esteja dentro de dois "for()" para ler a matriz, sendo 'j' do 'for' interno e 'i' do for mais externo
 		image->[j * image->width + i].r
 
 		outro exemplo, sabemos q a imagem do sor tem 512px por 512px,
@@ -49,10 +49,16 @@ int main()
 		{
 			for (i = 0; i < image->width; i++)
 			{
-				printf("(%d %d) %02x %02x %02x\n", i, j,
-					   image->pix[j * image->width + i].r,
-					   image->pix[j * image->width + i].g,
-					   image->pix[j * image->width + i].b);
+				// Código do sor pra printar o código hexadecimal da cor de cada pixel
+				// printf("(%d %d) %02x %02x %02x\n", i, j,
+				// 	   image->pix[j * image->width + i].r,
+				// 	   image->pix[j * image->width + i].g,
+				// 	   image->pix[j * image->width + i].b);
+
+				printf("Pixel (%d , %d) - RGB(%hu , %hu , %hu)\n", i ,j,
+						image->pix[j * image->width + i].r,
+						image->pix[j * image->width + i].g,
+						image->pix[j * image->width + i].b);
 			}
 		}
 		// No fucking ideia do q isso faz
@@ -61,8 +67,7 @@ int main()
 		image->pix[50 * image->width + 20].b = 255 ;
 
 
-		printf("COR DO ULTIMO PIXEL \n");
-		printf("RGB (%hu , %hu , %hu)\n",image->pix[511 *image->width + 511].r , image->pix[511 * image->width +511].g , image->pix[511 * image->width +511].b);
+		
 		write_ppm("lena_copy.ppm", image);
 
 		free_ppm(image);
